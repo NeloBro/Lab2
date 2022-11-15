@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>лаба 2</title>
+</head>
+<body>
+    x:<input id="x">n:<input id="n"><button onclick="work()">OK</button>
+    <p id="result"></p>
+<script type="text/javascript">
+    function work() {
+        var x = document.getElementById("x").value;
+        var n = document.getElementById("n").value;
+        var result = 0;
+        for(let i = 0;i<=n;i++){
+            result += ((-1)**i*x**(i+1))/(i+1);
+        }
+        document.getElementById("result").innerHTML = "Ответ: "+result
+    }
+</script>
+</body>
+</html>
